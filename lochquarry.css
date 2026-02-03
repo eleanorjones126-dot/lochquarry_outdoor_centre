@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header / Banner ===== */
+.header-banner {
+  position: relative;
+  background: url("images/banner.png") center/cover no-repeat;
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+.header-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(193, 203, 213, 0.75);
+  z-index: 0;
+}
+
+.header-banner * {
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  max-height: 90px;
+  width: auto;
+}
+
+/* ===== Nav ===== */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: rgb(52, 61, 66);
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+nav a:hover {
+  color: rgb(116, 138, 149);
+}
+
+/* ===== Main Content ===== */
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Text Sizes & Color */
+main h1 {
+  font-size: 26px;
+  text-align: center;
+  color: rgb(58, 66, 52);
+}
+main h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: rgb(58, 66, 52);
+}
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(58, 66, 52);
+}
+
+/* ===== Images ===== */
+main img {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+.staff-member img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== Table ===== */
+table {
+  margin: 10px auto;
+  width: 60%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid rgb(52, 61, 66);
+  padding: 8px;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: rgb(193, 203, 213);
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials img {
+  margin: 0 6px;
+}
